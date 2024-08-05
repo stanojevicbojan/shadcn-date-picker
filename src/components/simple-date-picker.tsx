@@ -82,16 +82,18 @@ const SimpleDatePicker: React.FC<SimpleDatePickerProps> = ({
     (_, i) => startYear + i
   );
   return (
-    <div className="grid grid-cols-3 gap-4 max-w-[360px]">
+    <div className="grid grid-cols-3 gap-4 max-w-[360px] dark:text-white ">
       <Select onValueChange={handleDayChange}>
-        <SelectTrigger className="h-auto hover:bg-gray-50 shadow-sm focus:outline-0 focus:ring-0 focus:ring-offset-0 min-h-[60px]">
+        <SelectTrigger className="h-auto  shadow-sm focus:outline-0 focus:ring-0 focus:ring-offset-0 min-h-[60px]">
           <SelectValue
             placeholder={
               <div className="flex flex-col items-start">
-                <span className="font-semibold uppercase text-[0.65rem] text-muted-foreground">
+                <span className="font-semibold uppercase text-[0.65rem] text-muted-foreground dark:text-white ">
                   Day
                 </span>
-                <span className="font-normal">{selected.getDate() || "-"}</span>
+                <span className="font-normal dark:text-white">
+                  {selected.getDate() || "-"}
+                </span>
               </div>
             }
           />
@@ -107,14 +109,14 @@ const SimpleDatePicker: React.FC<SimpleDatePickerProps> = ({
         </SelectContent>
       </Select>
       <Select onValueChange={handleMonthChange}>
-        <SelectTrigger className="h-auto hover:bg-gray-50 shadow-sm focus:outline-0 focus:ring-0 focus:ring-offset-0">
+        <SelectTrigger className="h-auto  shadow-sm focus:outline-0 focus:ring-0 focus:ring-offset-0">
           <SelectValue
             placeholder={
               <div className="flex flex-col items-start">
-                <span className="font-semibold uppercase text-[0.65rem] text-muted-foreground">
+                <span className="font-semibold uppercase text-[0.65rem] text-muted-foreground dark:text-white">
                   Month
                 </span>
-                <span className="font-normal">
+                <span className="font-normal dark:text-white">
                   {months[selected.getMonth()] || "-"}
                 </span>
               </div>
@@ -132,14 +134,14 @@ const SimpleDatePicker: React.FC<SimpleDatePickerProps> = ({
         </SelectContent>
       </Select>
       <Select onValueChange={handleYearChange}>
-        <SelectTrigger className="h-auto hover:bg-gray-50 shadow-sm focus:outline-0 focus:ring-0 focus:ring-offset-0">
+        <SelectTrigger className="h-auto shadow-sm focus:outline-0 focus:ring-0 focus:ring-offset-0">
           <SelectValue
             placeholder={
               <div className="flex flex-col items-start">
-                <span className="font-semibold uppercase text-[0.65rem] text-muted-foreground">
+                <span className="font-semibold uppercase text-[0.65rem] text-muted-foreground dark:text-white">
                   Year
                 </span>
-                <span className="font-normal">
+                <span className="font-normal dark:text-white">
                   {selected.getFullYear() || "-"}
                 </span>
               </div>
