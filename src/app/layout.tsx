@@ -14,18 +14,18 @@ const myFont = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    "https://www.kodawarians.com/resources/simple-date-picker"
+    "https://www.kodawarians.com/resources/shadcn-date-picker"
   ),
-  title: "SimpleDatePicker | Kodawarians",
-  description: "A simple date picker component for your shadcn ui app",
+  title: "ShadcnDatePicker | Kodawarians",
+  description: "A shadcn date picker component for your shadcn ui app",
   openGraph: {
-    title: "SimpleDatePicker | Kodawarians",
-    description: "A simple date picker component for your shadcn ui app",
+    title: "ShadcnDatePicker | Kodawarians",
+    description: "A shadcn date picker component for your shadcn ui app",
     images: "/og-image.png",
   },
   twitter: {
-    title: "SimpleDatePicker | Kodawarians",
-    description: "A simple date picker component for your shadcn ui app",
+    title: "ShadcnDatePicker | Kodawarians",
+    description: "A shadcn date picker component for your shadcn ui app",
     card: "summary_large_image",
     images: "/og-image.png",
   },

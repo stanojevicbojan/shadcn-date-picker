@@ -9,14 +9,14 @@ import {
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { useState } from "react";
 
-interface SimpleDatePickerProps {
+interface ShadcnDatePickerProps {
   startYear: number;
   endYear: number;
   selected: Date;
   onSelect: (date: Date) => void;
 }
 
-const SimpleDatePicker: React.FC<SimpleDatePickerProps> = ({
+const ShadcnDatePicker: React.FC<ShadcnDatePickerProps> = ({
   startYear,
   endYear,
   selected,
@@ -166,4 +166,4 @@ const SimpleDatePicker: React.FC<SimpleDatePickerProps> = ({
   );
 };
 
-export default SimpleDatePicker;
+export default ShadcnDatePicker;
